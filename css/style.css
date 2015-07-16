@@ -1,0 +1,128 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#header {
+    background: #333333;
+    padding: 5px;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
+    -moz-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
+    box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
+    z-index: 1;
+    color: #e0e0e0;
+    vertical-align: middle;
+}
+
+#header .row i {
+    position: relative;
+    color: #e0e0e0;
+    font-size: 1.5em;
+    float: left;
+}
+
+#header .row img {
+    width: 30px;
+    float: right;
+}
+
+#jumbotronSection {
+    background: #fff;
+    padding: 100px;
+    position: relative;
+}
+
+#body {
+    background: #d6d6d6;
+    padding: 10px;
+    padding-bottom: 60px;
+    /* Height of the footer */
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    /* Height of the footer */
+    
+    background: #333;
+}
+
+#footer p {
+    text-align: center;
+    color: #e0e0e0;
+    margin: 0;
+    padding-top: 10px;
+}
+/* ----------------------------------SVG ANIMATION LOGO------------------------------------------ */
+
+svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 90px;
+}
+
+rect {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: 7s outline forwards;
+}
+
+svg line {
+    stroke: #f0f0f0;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: 4s line forwards;
+}
+
+svg path {
+    fill: #f0f0f0;
+    opacity: 0;
+    animation: 6s text forwards;
+    animation-delay: 3s;
+}
+
+@keyframes outline {
+    from {
+        stroke-dashoffset: 2000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes line {
+    from {
+        stroke-dashoffset: 200;
+    }
+    to {
+        stroke-dashoffset: -230;
+    }
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* ----------------------------------SVG ANIMATION LOGO CSS ENDS HERE------------------------------------------ */
