@@ -1,8 +1,59 @@
+/*
+Thin 100  ..
+Thin 100 Italic  ..
+Light 300  ..
+Light 300 Italic  ..
+Normal 400  ..
+Normal 400 Italic  ..
+Medium 500  ..
+Medium 500 Italic  ..
+Bold 700  ..
+Bold 700 Italic  ..
+Ultra-Bold 900  ..
+Ultra-Bold 900 Italic  .
+
+-----------------------color scheme---------------------
+from black to white
+#0a0a0a
+#141414
+#1f1f1f
+#292929
+#333333
+#3d3d3d
+#474747
+#525252
+#5c5c5c
+#666666
+#707070
+#7a7a7a
+
+
+#858585
+#8f8f8f
+#999999
+#a3a3a3
+#adadad
+#b8b8b8
+#c2c2c2
+#cccccc
+#d6d6d6
+#e0e0e0
+#ebebeb
+#f5f5f5
+*/
+
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
 }
 
 #container {
@@ -11,39 +62,94 @@ body {
 }
 
 #header {
-    background: #333333;
-    padding: 5px;
-    height: 40px;
+    background: #3d3d3d;
+    padding: 0;
+    height: 50px;
     position: fixed;
     width: 100%;
     -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
     -moz-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
     box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
-    z-index: 1;
+    z-index: 5;
     color: #e0e0e0;
     vertical-align: middle;
 }
 
-#header .row i {
-    position: relative;
+.browseCourses {
+    margin: 5px;
     color: #e0e0e0;
-    font-size: 1.5em;
     float: left;
+    margin-left: 20px;
+    vertical-align: middle !important;
+}
+
+.browseCourses span {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.ghost-button-rounded-corners {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    color: #e0e0e0 !important;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+    background-color: #525252;
+    color: #fff !important;
 }
 
 #header .row img {
-    width: 30px;
+    margin: 0;
+    width: 40px;
+    /*    padding-top: 30px;*/
+}
+
+.btn-group {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin-right: 20px;
+    z-index: 6;
     float: right;
+    color: #000;
+}
+
+.btn-group .btn {
+    /*    position: absolute;*/
+}
+
+.btn-group ul {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.dropdown-menu {
+    position: absolute;
+    float: left;
+    /*    margin: 0 300px 0 0;*/
+}
+
+.caret {
+    border-top: 5px solid #e0e0e0 !important;
 }
 
 #jumbotronSection {
+    padding-top: 60px;
+    display: inline-block;
     background: #fff;
-    padding: 100px;
-    position: relative;
 }
 
 #body {
-    background: #d6d6d6;
+    background: #ebebeb;
     padding: 10px;
     padding-bottom: 60px;
     /* Height of the footer */
@@ -74,7 +180,7 @@ svg {
     left: 0;
     right: 0;
     margin: auto;
-    height: 90px;
+    height: 120px;
 }
 
 rect {
@@ -125,4 +231,25 @@ svg path {
         opacity: 1;
     }
 }
-/* ----------------------------------SVG ANIMATION LOGO CSS ENDS HERE------------------------------------------ */
+/* ------------SVG ANIMATION LOGO CSS ENDS HERE----------------------------------------------------------------- */
+/* ------------------------------------------Slidebars CSS STARTS HERE------------------------------------------ */
+
+#sb-site,
+.sb-site-container {
+    padding: 0;
+}
+
+.sb-slidebar {
+    padding: 14px;
+    color: #fff;
+}
+
+html.sb-active #sb-site,
+.sb-toggle-left,
+.sb-toggle-right,
+.sb-open-left,
+.sb-open-right,
+.sb-close {
+    cursor: pointer;
+}
+/* ----------Slidebars CSS ENDS HERE--------------------------------------------------------------------------- */
