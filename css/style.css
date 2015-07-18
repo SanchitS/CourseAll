@@ -76,7 +76,7 @@ a {
 }
 
 .browseCourses {
-    margin: 5px;
+    margin: 9px;
     color: #e0e0e0;
     float: left;
     margin-left: 20px;
@@ -144,25 +144,23 @@ a {
 
 #jumbotronSection {
     padding-top: 60px;
-    display: inline-block;
-    background: #fff;
+    background: #ebebeb;
 }
 
-#body {
-    background: #ebebeb;
+section {
+    background: #fff;
     padding: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     /* Height of the footer */
 }
 
-#footer {
-    position: absolute;
+footer {
+    background: #3d3d3d;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 40px;
     /* Height of the footer */
-    
-    background: #333;
 }
 
 #footer p {
@@ -170,6 +168,18 @@ a {
     color: #e0e0e0;
     margin: 0;
     padding-top: 10px;
+}
+
+form button {
+    margin-left: -10px;
+}
+
+header .btn {
+    border-radius: 0 4px 4px 0 !important;
+}
+
+form button:hover {
+    background-color: #f5f5f5 !important;
 }
 /* ----------------------------------SVG ANIMATION LOGO------------------------------------------ */
 
@@ -253,128 +263,8 @@ html.sb-active #sb-site,
     cursor: pointer;
 }
 
-form button {
-    margin-left: -10px;
-}
-
-form button:hover {
-    background-color: #e0e0e0;
-}
-
 #custom-templates .empty-message {
     padding: 5px 10px;
     text-align: center;
 }
 /* -----------Slidebars CSS ENDS HERE--------------------------------------------------------------------------- */
-/*
-#imaginary_container {
-    margin: 8px 0 0 40px;
-    width: 300px;
-}
-*/
-/*
-#imaginary_container .form-control {
-    width: 300px !important;
-}
-*/
-
-.stylish-input-group .input-group-addon {
-    background: white !important;
-}
-
-.stylish-input-group .form-control {
-    border-right: 0;
-    box-shadow: 0 0 0;
-    border-color: #ccc;
-}
-
-.stylish-input-group button {
-    border: 0;
-    background: transparent;
-}
-/*<dhcsfihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
-
-#custom-search-form {
-    margin: 0;
-    margin-top: 5px;
-    padding: 0;
-}
-
-#custom-search-form .search-query {
-    padding-right: 3px;
-    padding-right: 4px \9;
-    padding-left: 3px;
-    padding-left: 4px \9;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-    
-    margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-transition: width 0.2s ease-in-out;
-    -moz-transition: width 0.2s ease-in-out;
-    -o-transition: width 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out;
-}
-
-#custom-search-form button {
-    border: 0;
-    background: none;
-    /** belows styles are working good */
-    
-    padding: 2px 5px;
-    margin-top: 2px;
-    position: relative;
-    left: -28px;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-    
-    margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-
-.search-query:focus + button {
-    z-index: 3;
-}
-
-.search-query:focus {
-    width: 260px;
-}
-/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
-
-#custom-search-input {
-    position: relative;
-    margin-left: 400px;
-    padding: 3px;
-    width: 300px;
-    height: 40px;
-    border: solid 1px #E4E4E4;
-    border-radius: 6px;
-    background-color: #fff;
-}
-
-#custom-search-input input {
-    border: 0;
-    box-shadow: none;
-}
-
-#custom-search-input button {
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover {
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input .glyphicon-search {
-    font-size: 23px;
-}
