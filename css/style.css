@@ -113,6 +113,24 @@ a {
     /*    padding-top: 30px;*/
 }
 
+form button {
+    margin-left: -45px;
+    height: 30px;
+}
+
+header .btn {
+    border-radius: 0 4px 4px 0 !important;
+}
+
+form button:hover {
+    background-color: #f5f5f5 !important;
+}
+
+form .form-control {
+    height: 32px !important;
+    width: 250px !important;
+}
+
 .btn-group {
     position: relative;
     top: 0;
@@ -168,18 +186,6 @@ footer {
     color: #e0e0e0;
     margin: 0;
     padding-top: 10px;
-}
-
-form button {
-    margin-left: -10px;
-}
-
-header .btn {
-    border-radius: 0 4px 4px 0 !important;
-}
-
-form button:hover {
-    background-color: #f5f5f5 !important;
 }
 /* ----------------------------------SVG ANIMATION LOGO------------------------------------------ */
 
@@ -242,6 +248,8 @@ svg path {
     }
 }
 /* ------------SVG ANIMATION LOGO CSS ENDS HERE----------------------------------------------------------------- */
+/*
+*/
 /* ------------------------------------------Slidebars CSS STARTS HERE------------------------------------------ */
 
 #sb-site,

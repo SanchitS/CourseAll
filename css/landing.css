@@ -5,10 +5,25 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1.1em;
+    /*    font-size: 1.1em;*/
 }
+/*
+body:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    z-index: 100;
+}
+*/
 
-a {
+a,
+ul {
     text-decoration: none;
 }
 
@@ -20,7 +35,7 @@ a {
 }
 
 #header {
-    height: 40%;
+    height: 35%;
     position: fixed;
     top: 0;
     background: #333333;
@@ -41,32 +56,74 @@ a {
 */
 }
 
+.githubPage {
+    float: right;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+}
+
+.githubPage li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.githubpage li span {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header svg {
+    float: left !important;
+    left: 0 !important;
+}
+
 #section {
-    height: 50%;
-    top: 40%;
+    height: 60%;
+    top: 35%;
     position: fixed;
     background: #3d3d3d;
     width: 100%;
     color: #fff;
-    text-align: center;
-    font-size: 2em;
     z-index: 10;
     padding-top: 1%;
-    /*
-   
-    padding: 10px;
-    padding-bottom: 40px;
-*/
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.SecText p {
+    font-size: 150% !important;
+    font-weight: 300 !important;
+    line-height: 1.2em;
+}
+
+.SecText span {
+    font-weight: 600 !important;
+    color: #ff4d4d;
+    font-size: 180%;
+}
+
+.socialIcons {
+    position: fixed;
+    top: 90% !important;
+}
+
+.socialIcons li {
+    text-decoration: none;
+    display: inline-block;
 }
 
 #footer {
-    height: 10%;
-    top: 90%;
+    height: 5%;
+    top: 95%;
     background: #474747;
     width: 100%;
     z-index: 30;
     position: fixed;
     vertical-align: middle;
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
     /*
     
    
@@ -79,15 +136,18 @@ a {
 #footer p {
     color: #fff;
     text-align: center;
-    font-size: 2em;
-    padding-top: 1%;
+    font-size: 1.2em;
+    padding-top: 0.5%;
     vertical-align: middle;
-    /*
-    text-align: center;
-    color: #e0e0e0;
-    margin: 0;
-    padding-top: 10px;
-*/
+}
+
+.downarrow img {
+    z-index: 35;
+    position: fixed;
+    float: right;
+    right: 15%;
+    bottom: 2%;
+    width: 7%;
 }
 /* ----------------------------------SVG ANIMATION LOGO------------------------------------------ */
 
@@ -150,3 +210,20 @@ svg path {
     }
 }
 /* ------------SVG ANIMATION LOGO CSS ENDS HERE----------------------------------------------------------------- */
+
+.ghost-button-rounded-corners {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    color: #e0e0e0 !important;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+    background-color: #525252;
+    color: #fff !important;
+}
