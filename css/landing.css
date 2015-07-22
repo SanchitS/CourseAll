@@ -4,7 +4,7 @@ body {
     padding: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    /*    font-weight: 400;*/
     /*    font-size: 1.1em;*/
 }
 /*
@@ -31,6 +31,7 @@ ul {
     /*    min-height: 100%;*/
     
     position: relative;
+    min-height: 100%;
     background: #525252;
 }
 
@@ -56,11 +57,14 @@ ul {
 */
 }
 
+.headerRow {
+    padding: 2% 0 0 0;
+}
+/*
 .githubPage {
-    float: right;
     top: 0;
     font-family: 'Roboto', sans-serif;
-    position: fixed;
+    position: relative;
 }
 
 .githubPage li {
@@ -70,12 +74,44 @@ ul {
 
 .githubpage li span {
     font-family: 'Roboto', sans-serif;
+}*/
+
+.SVGanimation {
+    position: relative;
+    margin: 0 0 1% 0;
+    padding-left: 100px;
 }
 
+.SVGanimation svg {
+    /*
+    position: absolute;
+top: 0%;
+bottom: 60%;
+left: 0;
+right: 50%;
+*/
+    
+    display: block;
+    margin: auto;
+    margin: 0 1% 0 0;
+}
+/*
+.SVGtext {
+    text-align: center;
+}*/
+
+.SVGtext p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300 !important;
+    color: #f0f0f0;
+}
+/*
 #header svg {
     float: left !important;
     left: 0 !important;
 }
+*/
 
 #section {
     height: 60%;
@@ -83,7 +119,7 @@ ul {
     position: fixed;
     background: #3d3d3d;
     width: 100%;
-    color: #fff;
+    color: #f0f0f0;
     z-index: 10;
     padding-top: 1%;
     -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
@@ -93,7 +129,7 @@ ul {
 
 .SecText p {
     font-size: 150% !important;
-    font-weight: 300 !important;
+    font-weight: 200 !important;
     line-height: 1.2em;
 }
 
@@ -104,8 +140,8 @@ ul {
 }
 
 .socialIcons {
+    bottom: 5% !important;
     position: fixed;
-    top: 90% !important;
 }
 
 .socialIcons li {
@@ -134,7 +170,7 @@ ul {
 }
 
 #footer p {
-    color: #fff;
+    color: #f0f0f0;
     text-align: center;
     font-size: 1.2em;
     padding-top: 0.5%;
@@ -149,16 +185,12 @@ ul {
     bottom: 2%;
     width: 7%;
 }
-/* ----------------------------------SVG ANIMATION LOGO------------------------------------------ */
+/* --------------------SVG ANIMATION LOGO-------------------------------------------------------- */
 
 svg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 180%;
+    /*    position: absolute;*/
+    
+    width: 460px;
 }
 
 rect {
@@ -210,6 +242,8 @@ svg path {
     }
 }
 /* ------------SVG ANIMATION LOGO CSS ENDS HERE----------------------------------------------------------------- */
+/*.*/
+/* ----------------------------------------------ghost button CSS STARTS HERE------------------------------ */
 
 .ghost-button-rounded-corners {
     display: inline-block;
@@ -225,5 +259,65 @@ svg path {
 .ghost-button-rounded-corners:hover,
 .ghost-button-rounded-corners:active {
     background-color: #525252;
-    color: #fff !important;
+    color: #f0f0f0 !important;
 }
+/* -----------ghost button CSS ENDS HERE----------------------------------------------------------------- */
+/*.*/
+/* ------------------------------------SEARCH BAR CSS STARTS HERE---------------------------------------- */
+
+#wrap {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    position: relative;
+    height: 60px;
+    float: right;
+    padding: 0;
+    position: relative;
+}
+
+input[type="text"] {
+    height: 60px;
+    font-size: 25px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+    padding: 3px;
+    padding-right: 60px;
+    width: 400px;
+    border-bottom: 1px solid #BBB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: text;
+}
+
+input[type="submit"] {
+    height: 60px;
+    width: 40px;
+    display: inline-block;
+    /*    color: red;*/
+    
+    float: right;
+    background: url(../img/Search1.png) center center no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+/* ------------SEARCH BAR CSS ENDS HERE----------------------------------------------------------------- */
