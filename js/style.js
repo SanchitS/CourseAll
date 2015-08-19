@@ -1,3 +1,10 @@
+(function ($) {
+    $(document).ready(function () {
+        $.slidebars();
+    });
+    $("#demo01").animatedModal();
+})(jQuery);
+
 var bestPictures = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,

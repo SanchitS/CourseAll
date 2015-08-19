@@ -288,3 +288,60 @@ html.sb-active #sb-site,
     text-align: center;
 }
 /* -----------Slidebars CSS ENDS HERE--------------------------------------------------------------------------- */
+/* ------------------------------------SEARCH BAR CSS STARTS HERE---------------------------------------- */
+
+#wrap {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    position: relative;
+    height: 60px;
+    float: right;
+    padding: 0;
+    position: relative;
+}
+
+input[type="text"] {
+    height: 60px;
+    font-size: 25px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+    padding: 3px;
+    padding-right: 60px;
+    width: 400px;
+    border-bottom: 1px solid #BBB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: text;
+}
+
+input[type="submit"] {
+    height: 60px;
+    width: 40px;
+    display: inline-block;
+    float: right;
+    background: url(../img/Search1.png) center center no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+/* ------------SEARCH BAR CSS ENDS HERE----------------------------------------------------------------- */

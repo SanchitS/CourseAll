@@ -15,6 +15,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/slidebars.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
 
 </head>
 
@@ -98,8 +99,34 @@
                     </div>
 -->
                     <div class="searchIcon ghost-button-rounded-corners">
-                        <a href="#"><img src="img/find.png" />
+
+                        <a id="demo01" href="#animatedModal"><img src="img/find.png" />
                         </a>
+
+                        <!--DEMO01-->
+                        <div id="animatedModal">
+                            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                            <div class="close-animatedModal">
+                                CLOSE MODAL
+                            </div>
+
+                            <div class="modal-content">
+                                <!--Your modal content goes here-->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="wrap">
+                                                <form action="" autocomplete="on">
+                                                    <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+                                                    <input id="search_submit" value="Rechercher" type="submit">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -176,13 +203,9 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/slidebars.js"></script>
     <script src="js/typeahead.js"></script>
+    <script src="js/animatedModal.min.js"></script>
     <script src="js/style.js"></script>
     <script>
-        (function ($) {
-            $(document).ready(function () {
-                $.slidebars();
-            });
-        })(jQuery);
     </script>
 
 </body>
