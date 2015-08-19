@@ -42,39 +42,11 @@ ul {
     background: #333333;
     width: 100%;
     z-index: 0;
-    /*
-    background: #3d3d3d;
-    padding: 0;
-    height: 50px;
-   
-    width: 100%;
-    -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
-    -moz-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
-    box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
-    z-index: 5;
-    color: #e0e0e0;
-    vertical-align: middle;
-*/
 }
 
 .headerRow {
     padding: 2% 0 0 0;
 }
-/*
-.githubPage {
-    top: 0;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-}
-
-.githubPage li {
-    text-decoration: none;
-    display: inline-block;
-}
-
-.githubpage li span {
-    font-family: 'Roboto', sans-serif;
-}*/
 
 .SVGanimation {
     position: relative;
@@ -83,22 +55,10 @@ ul {
 }
 
 .SVGanimation svg {
-    /*
-    position: absolute;
-top: 0%;
-bottom: 60%;
-left: 0;
-right: 50%;
-*/
-    
     display: block;
     margin: auto;
     margin: 0 1% 0 0;
 }
-/*
-.SVGtext {
-    text-align: center;
-}*/
 
 .SVGtext p {
     font-family: 'Roboto', sans-serif;
@@ -106,12 +66,6 @@ right: 50%;
     font-weight: 300 !important;
     color: #f0f0f0;
 }
-/*
-#header svg {
-    float: left !important;
-    left: 0 !important;
-}
-*/
 
 #section {
     height: 60%;
@@ -128,53 +82,31 @@ right: 50%;
 }
 
 .SecText p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 200 !important;
     font-size: 150% !important;
     font-weight: 200 !important;
     line-height: 1.2em;
 }
 
 .SecText span {
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     color: #ff4d4d;
     font-size: 180%;
 }
 
-.socialIcons {
+.socialIconsList ul {
+    float: left;
+    left: 0;
     bottom: 5% !important;
     position: fixed;
+    text-align: center;
 }
 
-.socialIcons li {
+.socialIconsList li {
     text-decoration: none;
     display: inline-block;
-}
-
-#footer {
-    height: 5%;
-    top: 95%;
-    background: #474747;
-    width: 100%;
-    z-index: 30;
-    position: fixed;
-    vertical-align: middle;
-    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
-    /*
-    
-   
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-*/
-}
-
-#footer p {
-    color: #f0f0f0;
-    text-align: center;
-    font-size: 1.2em;
-    padding-top: 0.5%;
-    vertical-align: middle;
 }
 
 .downarrow img {
@@ -184,6 +116,36 @@ right: 50%;
     right: 15%;
     bottom: 2%;
     width: 7%;
+}
+
+#footer {
+    height: 5%;
+    top: 95%;
+    background: #474747;
+    width: 100%;
+    z-index: 30;
+    padding-top: 0.5%;
+    position: fixed;
+    text-align: center;
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+#footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: auto auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300 !important;
+}
+
+#footer a:hover {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500 !important;
 }
 /* --------------------SVG ANIMATION LOGO-------------------------------------------------------- */
 
@@ -267,6 +229,7 @@ svg path {
 
 #wrap {
     display: inline-block;
+    text-align: center;
     margin: 10px 0 0 0;
     position: relative;
     height: 60px;
@@ -301,8 +264,6 @@ input[type="submit"] {
     height: 60px;
     width: 40px;
     display: inline-block;
-    /*    color: red;*/
-    
     float: right;
     background: url(../img/Search1.png) center center no-repeat;
     text-indent: -10000px;
